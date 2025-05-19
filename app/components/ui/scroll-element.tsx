@@ -1,12 +1,5 @@
 import { cn } from "@/lib/utils";
-import {
-  motion,
-  HTMLMotionProps,
-  SVGMotionProps,
-  ForwardRefComponent,
-  Variant,
-  useAnimation,
-} from "motion/react";
+import { motion, HTMLMotionProps, SVGMotionProps, Variant } from "motion/react";
 import React from "react";
 type Direction = "up" | "down" | "left" | "right";
 

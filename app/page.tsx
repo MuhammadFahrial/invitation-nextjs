@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { crimsonText, playball } from "./components/ui/fonts";
 import Countdown from "./components/ui/countdown";
