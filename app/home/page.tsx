@@ -69,6 +69,21 @@ export default function Home() {
         </TimelineContent>
 
         <TimelineContent
+          as="div"
+          animationNum={2}
+          timelineRef={heroRef}
+          customVariants={revealVariants}
+        >
+          <Image
+            src={"/photo.jpg"}
+            alt="photo"
+            width={100}
+            height={100}
+            className="rounded-full my-4 "
+          />
+        </TimelineContent>
+
+        <TimelineContent
           as="h3"
           animationNum={2}
           timelineRef={heroRef}
