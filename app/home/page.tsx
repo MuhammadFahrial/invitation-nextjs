@@ -105,12 +105,7 @@ export default function Home() {
       </section>
 
       {/* Informasi Acara */}
-      <section
-        ref={heroRef}
-        id="informasi"
-        className="flex flex-col h-screen justify-center items-center bg-amber-100 text-black bg-cover bg-center"
-        // style={{ backgroundImage: "url('/bg-hero.jpg')" }}
-      ></section>
+      <section id="informasi"></section>
 
       {/* Gallery */}
       <section id="gallery" className={``}></section>
