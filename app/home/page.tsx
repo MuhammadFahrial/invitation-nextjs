@@ -33,7 +33,7 @@ export default function Home() {
         ref={heroRef}
         id="home"
         className="flex flex-col h-screen justify-center items-center bg-amber-100 text-black bg-cover bg-center "
-        // style={{ backgroundImage: "url('/bg-hero.jpg')" }}
+        style={{ backgroundImage: "url('/bg-heroo.jpg')" }}
       >
         <TimelineContent
           as="div"
@@ -106,7 +106,7 @@ export default function Home() {
 
       {/* Informasi Acara */}
       <section id="informasi">
-        <div className="flex flex-col items-center justify-center py-12 text-black bg-amber-200">
+        <div className="flex flex-col items-center justify-center py-12 text-black bg-amber-50">
           <h1 className={`mb-8 ${playball.className} text-4xl`}>
             Informasi Acara
           </h1>
