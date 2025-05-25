@@ -105,13 +105,30 @@ export default function Home() {
       </section>
 
       {/* Informasi Acara */}
-      <section id="informasi">
-        <div className="flex flex-col items-center justify-center py-12 text-black bg-amber-50">
-          <h1 className={`mb-8 ${playball.className} text-4xl`}>
+      <section id="informasi ">
+        <div className="flex flex-col items-center justify-center py-18 text-black bg-[#fff] ">
+          <h1 className={`mb-8 ${playball.className} text-4xl text-[#b68f5f]`}>
             Informasi Acara
           </h1>
-          <div className="flex flex-col items-center justify-center md:flex-row gap-12">
-            <div className="flex flex-row justify-center items-center w-100 md:w-1/2">
+
+          <div className="flex flex-col justify-center items-center mb-6">
+            <div className="flex gap-4 items-center justify-center">
+              <p className={`text-xl ${crimsonText.className}`}>Senin</p>
+              <p
+                className={`text-4xl border-l-1 border-r-1 px-4 border-[#b68f5f] text-[#b68f5f] ${crimsonText.className}`}
+              >
+                24
+              </p>
+              <p className={`text-xl ${crimsonText.className}`}>Juni</p>
+            </div>
+            <p className={`text-xl ml-3 mt-2 ${crimsonText.className}`}>2025</p>
+            <p className={`text-[18px] mt-4 ${crimsonText.className}`}>
+              Jam : 10.00 WITA - Selesai
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center justify-center gap-12">
+            <div className="flex flex-row justify-center items-center w-100">
               <Image
                 src={"/map.png"}
                 alt="map"
@@ -127,20 +144,39 @@ export default function Home() {
               </h1>
             </div>
             <div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.8248628858596!2d120.37382847405696!3d-3.3928955965817202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d96bb44222ff387%3A0xde22ec82bd984dcc!2sDUA%20PUTRA%20KOMPUTER%20(Servise%20Dan%20Sablon%20Polyflex)!5e0!3m2!1sen!2sid!4v1747708143016!5m2!1sen!2sid"
-                // width="400"
-                // height="350"
-                loading="lazy"
-                className="w-84 h-84 rounded-2xl"
-              ></iframe>
+              <div
+                className="flex bg-[#b68f5f] py-3 px-4 rounded text-white 
+                 hover:bg-[#b68f5f]/60 hover:text-black/90  duration-300 text-sm "
+              >
+                <a
+                  href="https://maps.app.goo.gl/ti63oR3HggKa68Yu6"
+                  className="flex items-center justify-center "
+                >
+                  <Image
+                    src={"/location.png"}
+                    alt="location"
+                    width={20}
+                    height={15}
+                    className="mr-1"
+                  />
+                  <p>Open Maps</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Gallery */}
-      <section id="gallery" className={``}></section>
+      <section
+        id="gallery"
+        className="flex flex-col h-screen justify-center items-center bg-amber-100 text-black bg-cover bg-center "
+        style={{ backgroundImage: "url('/bg-heroo.jpg')" }}
+      >
+        <div>
+          <h1>Gallery</h1>
+        </div>
+      </section>
 
       {/* Gift */}
       <section id="gift"></section>
