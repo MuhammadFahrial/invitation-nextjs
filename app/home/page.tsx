@@ -29,7 +29,10 @@ export default function Home() {
 
   return (
     <div className="box-border overflow-hidden">
+      <audio src="/audio/playback.mp3" autoPlay={true} />
+
       {/* Ucapan */}
+
       <section
         ref={heroRef}
         id="home"
