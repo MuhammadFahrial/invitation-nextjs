@@ -5,6 +5,7 @@ import { crimsonText, playball } from "@/app/components/ui/fonts";
 import { useRef } from "react";
 import { TimelineContent } from "@/app/components/ui/framer-timeline";
 import type { Variants } from "motion/react";
+import ScrollElement from "@/app/components/ui/scroll-element";
 
 export default function Home() {
   const heroRef = useRef(null);
@@ -32,7 +33,7 @@ export default function Home() {
       <section
         ref={heroRef}
         id="home"
-        className="flex flex-col h-screen justify-center items-center bg-amber-100 text-black bg-cover bg-center "
+        className="flex flex-col h-screen justify-center items-center bg-amber-100 text-black/80 bg-cover bg-center "
         style={{ backgroundImage: "url('/bg-heroo.jpg')" }}
       >
         <TimelineContent
@@ -105,8 +106,8 @@ export default function Home() {
       </section>
 
       {/* Informasi Acara */}
-      <section id="informasi ">
-        <div className="flex flex-col items-center justify-center py-18 text-black bg-[#fff] ">
+      <section id="informasi">
+        <div className="flex flex-col items-center justify-center py-18 text-black/80 bg-[#fff] ">
           <h1 className={`mb-8 ${playball.className} text-4xl text-[#b68f5f]`}>
             Informasi Acara
           </h1>
@@ -170,11 +171,50 @@ export default function Home() {
       {/* Gallery */}
       <section
         id="gallery"
-        className="flex flex-col h-screen justify-center items-center bg-amber-100 text-black bg-cover bg-center "
+        className="bg-cover bg-center py-8 flex flex-col justify-center items-center text-black"
         style={{ backgroundImage: "url('/bg-heroo.jpg')" }}
       >
-        <div>
-          <h1>Gallery</h1>
+        <div className=" grid place-content-center">
+          <h1 className={`mb-8 ${playball.className} text-5xl text-black/80`}>
+            Gallery
+          </h1>
+        </div>
+        <div className="">
+          <div className=" flex flex-wrap justify-center items-center gap-4">
+            <ScrollElement
+              viewport={{ amount: 0.5, margin: "0px 0px 0px 0px" }}
+            >
+              <Image
+                src={"/baby1.jpg"}
+                alt=""
+                width={200}
+                height={200}
+                className="md:w-80 w-40 rounded"
+              />
+            </ScrollElement>
+            <ScrollElement
+              viewport={{ amount: 0.5, margin: "0px 0px 0px 0px" }}
+            >
+              <Image
+                src={"/baby2.jpg"}
+                alt=""
+                width={200}
+                height={200}
+                className="md:w-80 w-40 rounded"
+              />
+            </ScrollElement>
+            <ScrollElement
+              viewport={{ amount: 0.5, margin: "0px 0px 0px 0px" }}
+            >
+              <Image
+                src={"/baby3.jpg"}
+                alt=""
+                width={200}
+                height={200}
+                className="md:w-80 w-40 rounded"
+              />
+            </ScrollElement>
+          </div>
         </div>
       </section>
 
