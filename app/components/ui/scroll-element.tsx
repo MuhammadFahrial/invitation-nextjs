@@ -17,7 +17,11 @@ const generateVariants = (
   const value = direction === "right" || direction === "down" ? 100 : -100;
 
   return {
-    hidden: { filter: "blur(10px)", opacity: 0, [axis]: value },
+    hidden: {
+      filter: "blur(10px)",
+      opacity: 0,
+      [axis]: value,
+    } as Variant,
     visible: {
       filter: "blur(0px)",
       opacity: 1,
@@ -26,7 +30,7 @@ const generateVariants = (
         duration: 0.5,
         ease: "easeOut",
       },
-    },
+    } as Variant,
   };
 };
 
